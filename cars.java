@@ -49,7 +49,6 @@ public class cars implements movable{
     public void move() {
         switch (direction) {
             case "North": y += currentSpeed;
-<<<<<<< HEAD
             break;
             case "East": x+=currentSpeed;
             break;
@@ -57,17 +56,12 @@ public class cars implements movable{
             break;
             case "West": x-=currentSpeed;
             break;
-=======
-            case "East": x+=currentSpeed;
-            case "South": y -= currentSpeed;
-            case "West": x-=currentSpeed;
->>>>>>> edf1f14604fc70130749807cc698cf3edbbf6f4b
+
         }
 
     }
 
     public void turnLeft() {
-        System.out.println(direction);
         switch (direction) {
             case "North":
                 setDirection("West");
